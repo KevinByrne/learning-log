@@ -123,3 +123,59 @@ Finally I used the ruby docs to look at a few methods on a different data type. 
 </li>
 </ol>
 </details>
+<details>
+<summary>Chapter 4</summary><br>
+This chapter summarized some of the information researched earlier.
+
+<ul>
+<li>Different types of data types</li>
+</ul>
+
+<b><u>The difference between Integers and Floats</u></b>
+
+Integers are whole numbers
+
+You can use Integers for example, in mathematic calculations.
+
+Some of these are
+<ul>
+<li>Addition <code>1 + 1</code></li>
+<li>Subtraction <code>5 - 4</code></li>
+<li>Division <code>5 / 2</code> - this returns a whole number so in this example it would be <code>2</code></li>
+<li>Multiplication <code>5 * 5</code></li>
+<li>Modulo <code>5 % 2</code> - this divides the numbers given and returns the remainder as opposed to how many times the number can divided.</li>
+<li>Exponentiation ( to the power of) <code>5 ** 3</code> - in this example this returns <code>125</code> ( 5 x 5 = 25 x 5 = 125)</li>
+</ul>
+
+Floats are decimal value numbers, the decimal point can be anywhere within the range of numbers.
+
+Basic mathematics can also be called on floats
+
+Symbols are similar to strings and are optimized by programmers.
+
+Booleans are <code>true</code> and <code>false</code> values generally called by methods using a <code>?</code> within their syntax for example <code>.odd?</code> <code>.even?</code> <code>.include?</code> or <code>.empty?</code>
+
+They can include several operators including
+<ul>
+<li><code>&&</code> which must meet BOTH conditions to return <code>true</code>
+
+<li><code>||</code> which only needs one of the conditions to be met to return <code>true</code></li></ul>
+
+To replicate the exercise on the course notes I changed this slightly to embed understanding.
+
+The exercise given was 
+
+<li><code>password.length > 7 && password.length < 13</code></li>
+
+this would return <code>true</code> if the length of the password was more than (>) 7 characters and less than (<) 13 characters.
+
+I further elaborated on this executing the following code in IRB
+<ul>
+<li><code>password = "This is a paszword"
+
+password.include?("p") && password.include?("z")</code></li>
+</ul>
+
+Executing this gave a return value of <code>true</code>.
+</details>
+
