@@ -224,3 +224,79 @@ If you provide the wrong number of arguments an error message will be returned, 
 will return an error message <code>ArgumentError (wrong number of arguments (given 0, expected 1+))</code>
 </details>
 
+<details>
+<summary>Chapter 6</summary>
+<h3>Conditionals</h3><br>
+
+In this chapter we looked at conditional statements such as <code>if elsif</code> and <code>else</code>
+
+Conditionals are used to help a programme make decisions based on meeting criteria within said conditional statements.
+
+We broke down a typical <code>if</code> statement, essentially an <code>if</code> statement is asking if something is <code>true</code> or <code>false</code>, for example
+
+<code>
+name = kevin
+
+    if(name.include? "k")
+      true
+    end
+</code>
+
+This would return a value of <code>true</code> as it contains a "k"
+
+If it doesn't contain a "k" it would return <code>nil</code>, to prevent this from happening so that we can see if its <code>true</code> or <code>false</code> we can use a catch all conditional in the event the name does not include a "k".
+
+We do this by adding an <code>else</code> statement, for example,
+
+<code>
+name = "bob"
+
+    if (name.include? "k")
+      true
+    else
+      false
+    end
+</code>
+
+
+If we now assign the name variable with the value of "bob" it will return false.
+
+<code>elsif</code> comes into play when you have multiple outcomes.
+
+I have included an example below based on a popular sign at tourist attractions.
+
+This is called the weather stone and I decided to create a conditional loop.
+
+1. The end user provides an argument for the method based on how the stone appears
+2. The program executes using an initial <code>if</code> statement, if the criteria of that statement is not met, it then looks at the next conditional statement using <code>elsif</code> to see if it matches.
+3. <code>elsif</code> will continue to do this and if none of the arguments match the conditions set, it then reads from an <code>else</code> statement which is our catch all.
+
+<code>
+def weather_forecast(stoneAppearance)
+
+    if stoneAppearance == "wet"
+      puts "It's raining!"
+    elsif stoneAppearance == "dry"
+      puts "It's not raining!"
+    elsif stoneAppearance == "shadow"
+      puts "It's sunny!"
+    elsif stoneAppearance == "white"
+      puts "It's snowing!"
+    elsif stoneAppearance == "hard to see"
+      puts "It's foggy!"
+    elsif stoneAppearance == "swinging"
+      puts "It's windy!"
+    elsif stoneAppearance == "shaking"
+      puts "Oh no! An Earthquake!"
+    elsif stoneAppearance == "gone"
+      puts "Oh dear! We've had a tornado! I'll get you my pretty!"
+    else
+      puts "please use 'wet', 'dry', 'shadow', 'white', 'hard to see', 'swinging', 'shaking' or 'gone' as an argument"
+    end
+  end
+
+
+weather_forecast("wet")
+</code>
+</details>
+
