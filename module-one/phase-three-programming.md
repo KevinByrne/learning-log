@@ -179,3 +179,48 @@ password.include?("p") && password.include?("z")</code></li>
 Executing this gave a return value of <code>true</code>.
 </details>
 
+<details>
+<summary>Chapter 5</summary>
+<h3>Using arguments in Ruby</h3><br>
+
+Arguments are pieces of information that are presents to methods, generally placed inside of (brackets or parenthesis).
+
+In one of the exercises we were asked to research using methods with arguments, the answers are below:
+
+<ul>
+<li><code>count</code> - counts the instances of a character occurring in a string, for example,
+
+<code>"using arguments in Ruby".count "a"</code><br>
+gives a return value of <code>1</code></li>
+
+<li><code>delete</code> - deletes characters given in an argument from a string, for example,
+
+<code>"using arguments in Ruby".delete "n"</code><br> 
+gives a return value of <code>"usg argumets i Ruby"</code></li>
+
+<li><code>end_with?</code> - gives a return value of <code>true</code> or <code>false</code> depending on given argument, for example,
+
+<code>"using arguments in Ruby".end_with? "y"</code><br>
+gives a return value of <code>true</code></li>
+<li><code>prepend</code> - adds characters given in argument to the start of a string, for example,
+
+<code>"using arguments in Ruby".prepend "I'm "</code><br>
+gives a return value of <code>"I'm using arguments in Ruby"</code></li>
+</ul>
+
+Some methods use multiple arguments, for example the <code>gsub</code> method - this is a method whereby you have to pass two arguments.
+
+The <code>gsub</code> method is used to substitute one character for another in a string therefore you have to tell the method what character you want replacing and what character you want to replace it. 
+
+<code>"using arguments in Ruby".gsub("n", "t")</code>
+
+gives a return value of <code>usitg argumetts it Ruby"</code>
+
+
+If you provide the wrong number of arguments an error message will be returned, for example,
+
+<code>"using arguments in Ruby".count</code>
+
+will return an error message <code>ArgumentError (wrong number of arguments (given 0, expected 1+))</code>
+</details>
+
