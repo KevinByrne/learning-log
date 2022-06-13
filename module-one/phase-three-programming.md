@@ -300,3 +300,109 @@ weather_forecast("wet")
 </code>
 </details>
 
+<details>
+<summary>Chapter 7</summary>
+<h3>Executing Ruby Files</h3><br>
+
+In this chapter we looked at creating and executing files in Ruby.
+
+Ruby files are saved in <code>.rb</code> files.
+
+You can create a new Ruby file within the terminal by typing 
+<code>touch file_name.rb</code>.
+
+The file will be in which ever directory you are in or where you have assigned the file to be saved.
+
+The code within the <code>.rb</code> file will be executed and should the code contain a prompt to output a visual return value, this will appear in the terminal. For example
+
+<code>puts "This is my output"</code>
+
+will return an output in the terminal of <code>This is my output</code>.
+
+If <code>puts</code> was not part of the program, the program would still be executed but there would be no visual output. You can use <code>puts</code> or <code>print</code> to output to terminal.
+
+Its best practice to use <code>puts</code> if needed, after the program has executed what it needs to do. It would make no sense to have a <code>puts</code> command in the middle of a process (although this can be done).
+</details>
+
+<details>
+<summary>Chapter 8</summary>
+<h3>Defining Methods</h3><br>
+
+Alongside built in methods in Ruby, self-defined methods can be created.
+
+User defined methods provide the ability to write steps to influence how a programme runs. You can then attach these methods to objects that have been created. Creating your own methods allows you to call these methods on various different objects if need be also.
+
+Methods are defined by using syntax <code>def</code> and closing the block by using <code>end</code>. You can use this to wrap your code in a method, so you could place an <code>if</code> loop within this block.
+
+<code>
+def check_my_name(name)
+
+    if name.include?("kevin")
+      return true
+    else
+      return false
+    end
+end
+
+check_my_name("kevin")
+</code>
+
+would return
+
+<code>true</code>
+
+We were given some additional exercises to check understanding. These were:
+
+Concatenate all the names of everyone in your family
+
+<code>
+
+def family
+
+    mum = "Sarah, "
+    dad = "Kev, "
+    child_one = "Bella, "
+    child_two = "Jake, "
+    child_three = "Nicol "
+    child_four = "Andrea"
+
+    puts "Our family consists of #{mum}#{dad}#{child_one}#{child_two}#{child_three}and #{child_four}"
+end
+
+family
+</code>
+
+Calculate the number of seconds in 12 weeks
+
+<code>
+def seconds(numberOfWeeks)
+
+    seconds_in_a_week = 604800
+    puts seconds_in_a_week * numberOfWeeks
+end
+
+seconds(12)
+
+</code>
+</details>
+
+<details>
+<summary>
+Chapter 9
+</summary>
+
+Chapter 9 was a series of drills to practice and embed knowledge, I found the repetitive nature of the exercises very helpful.
+
+These exercises encouraged looking at Ruby docs and establishing which methods were best to use.
+
+The drills were broken down into four stages.
+1. calling methods
+2. calling methods with arguments
+3. Using conditional statements
+4. defining our own methods - writing a method to a given specification.
+
+The completed exercises can be found within the github repo
+
+[Challenges link](https://github.com/KevinByrne/ruby_foundations/tree/main/chapter1/challenges/drills/lib)
+
+</details>
